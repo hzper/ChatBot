@@ -1,5 +1,7 @@
 import React from 'react';
-import ChatBot from 'react-simple-chatbot';
+import { Button } from '@material-ui/core';
+
+// import ChatBot from 'react-simple-chatbot';
 import './App.css';
 
 function App() {
@@ -10,11 +12,15 @@ function App() {
         <div>
           <iframe
             allow="microphone;"
-            width="350"
-            height="430"
+            width="500"
+            height="600"
             src="https://console.dialogflow.com/api-client/demo/embedded/8fcaad77-9788-45c7-85cb-2d25b051ec7c">
           </iframe>
+
         </div>
+
+        <Button color = "primary" >Hello WoRLD!</Button>
+
 
         {/* <ChatBot
           steps={[
@@ -38,7 +44,7 @@ function App() {
 
 
       </header>
-    </div>
+    </div >
   );
 }
 
