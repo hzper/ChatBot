@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+ html {
+	 font-family: Arial;
+	 font-size: 20px;
+	 background: #4d6e17;
+}
+
+.srgt{
+  margin-left: 30px;
+  margin-top: 20px;
+  position:fixed;
+}
+ .sidebar {
+	 position: fixed;
+	 width: 25%;
+	 height: 100vh;
+	 background:linear-gradient(to right, #4d6e17, #609111);
+	 font-size: 20px;
+}
+ .nav {
+	 position: relative;
+	 margin: 3nm 0;
+	 text-align: right;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 font-weight: bold;
+}
+ .nav ul {
+	 list-style: none;
+}
+ .nav ul li {
+	 position: relative;
+   margin: 3em 0;
+   left: -20px;
+}
+ .nav ul li a {
+	 line-height: 3em;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 letter-spacing: 0.4em;
+	 color: rgba(255, 255, 255, 0.35);
+	 display: block;
+	 transition: all ease-out 300ms;
+}
+ .nav ul li.active a {
+	 color: white;
+}
+ .nav ul li:not(.active)::after {
+	 opacity: 0.2;
+}
+ .nav ul li:not(.active):hover a {
+	 color: rgba(255, 255, 255, 0.75);
+}
+ .nav ul li::after {
+	 content: "";
+	 position: absolute;
+	 width: 100%;
+	 height: 3px;
+	 background: black;
+   left: 0;
+   bottom: 0;
+   animation-name: bckg;
+   animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	 background-image: bckg;
+}
+
+
+@keyframes bckg{
+	0% {
+		background: #960579;
+	}
+	25% {
+		background: #9b2b85;
+	}
+	50% {
+		background: #8d4d80;
+	}
+	75% {
+		background: #92698a;
+	}
+	100% {
+		background: #df9cd1;
+	}
+}
+
+
+ .twitter  {
+	 position: relative;
+	 width: 75%;
+	 float: right;
+	 height: 100vh;
+}
+
+
+ iframe{
+   position: fixed;
+   height: 100%;
+   width: 75%;
+   
+ }
+
+ .block{
+   position: fixed;
+   z-index: 10000;
+   width: 90%;
+   height: 110px;
+   border-width: 0.5%;
+   border: darkgrey;
+   border-style: solid;
+   border-color: darkgrey;
+   background:linear-gradient(to right, #609111, #4d6e17);
+   border-left: none;
+   border-top: none;
+   
+ }
+
+ 

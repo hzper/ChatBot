@@ -1,50 +1,78 @@
-import React from 'react';
-import { Button } from '@material-ui/core';
 
-// import ChatBot from 'react-simple-chatbot';
-import './App.css';
+import { Button } from '@material-ui/core';
+import React from "react";
+import "./styles.css";
+import srgt from "./srgt.png";
+import block from "./block.jpg";
+
 
 function App() {
 
   return (
+  
     <div className="App">
-      <header className="App-header">
+    
+   
+
+    
+<main class="main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <aside class="sidebar">
+  <img class= "srgt" src={srgt}  width="300" height="150"></img>
+
+    <nav  class="nav">
+      <ul>
+        <li class="active"><a href="#">Welcome</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <section class="twitter">
+  
+  <div class="block"> </div>
+
+
         <div>
-          <iframe
-            allow="microphone;"
-            width="500"
-            height="600"
-            src="https://console.dialogflow.com/api-client/demo/embedded/8fcaad77-9788-45c7-85cb-2d25b051ec7c">
-          </iframe>
+        
+        <iframe class="chat"
+    allow="microphone;"
+   
+    src="https://console.dialogflow.com/api-client/demo/embedded/8fcaad77-9788-45c7-85cb-2d25b051ec7c">
+
+
+
+</iframe>
 
         </div>
 
-        <Button color = "primary" >Hello WoRLD!</Button>
+  </section>
+
+</main>
+
+</div>
 
 
-        {/* <ChatBot
-          steps={[
-            {
-              id: '1',
-              message: 'What is your name?',
-              trigger: '2',
-            },
-            {
-              id: '2',
-              user: true,
-              trigger: '3',
-            },
-            {
-              id: '3',
-              message: 'Hi {previousValue}, nice to meet you!',
-              end: true,
-            },
-          ]}
-        /> */}
 
 
-      </header>
-    </div >
+
+
+    
+    
   );
 }
 
