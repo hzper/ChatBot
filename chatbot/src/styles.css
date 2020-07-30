@@ -106,16 +106,11 @@
 
 
 @keyframes txt{
+	
 	0% {
-		color: #960579;
-	}
-	25% {
-		color: #9b2b85;
-	}
-	50% {
 		color: #8d4d80;
 	}
-	75% {
+	50% {
 		color: #92698a;
 	}
 	100% {
@@ -282,7 +277,7 @@
 		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 28px 50%;
+		padding: 37px 50%;
 		position: relative;
 		user-select: none;
 		margin: auto;
@@ -291,7 +286,7 @@
 	  }
 	  
 	  .header .menu-icon .navicon {
-		background: #333;
+		background: #4d6e17;
 		display: block;
 		height: 2px;
 		position: relative;
@@ -301,7 +296,7 @@
 	  
 	  .header .menu-icon .navicon:before,
 	  .header .menu-icon .navicon:after {
-		background: #333;
+		background: #4d6e17;
 		content: '';
 		display: block;
 		height: 100%;
@@ -328,7 +323,7 @@
 	  }
 	  
 	  .header .menu-btn:checked ~ .menu {
-		max-height: 240px;
+		max-height: 250px;
 		float: center;
 	  }
 	  
