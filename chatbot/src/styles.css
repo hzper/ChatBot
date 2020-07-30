@@ -176,10 +176,17 @@
 
  
 @media only screen and (max-width: 800px) {
-	.sidebar{
+	.nav{
 		display: none;
 		
 	}
+
+
+
+
+
+
+
 
 	.twitter{
 		
@@ -218,6 +225,14 @@
 		margin-top: 25px;
 		
 		
+	  }
+
+	  .srgt{
+		  z-index: 999999;
+		  width: 100px;
+		  height: 45px;
+		  margin-left: 87%;
+		  margin-top: 8%;
 	  }
 	
 
