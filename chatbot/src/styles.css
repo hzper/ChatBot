@@ -3,20 +3,38 @@
 	 font-family: Arial;
 	 font-size: 20px;
 	 background: #4d6e17;
+	 position: relative;
 }
 
 .srgt{
-  margin-left: 30px;
+  margin-left: 10px;
   margin-top: 20px;
   position:fixed;
+  width: 330px;
+  height: 150px;
 }
+
+
+
+
+
+
  .sidebar {
-	 position: fixed;
+	 position: absolute;
 	 width: 25%;
-	 height: 100vh;
+	 height: 100%;
 	 background:linear-gradient(to right, #4d6e17, #609111);
 	 font-size: 20px;
+
 }
+
+
+
+
+
+
+
+
  .nav {
 	 position: relative;
 	 margin: 3nm 0;
@@ -30,8 +48,8 @@
 }
  .nav ul li {
 	 position: relative;
-   margin: 3em 0;
-   left: -20px;
+  	margin: 3em 0;
+   	left: -20px;
 }
  .nav ul li a {
 	 line-height: 3em;
@@ -94,17 +112,17 @@
 }
 
 
- iframe{
+ .chat{
    position: fixed;
    height: 100%;
-   width: 75%;
+   width: 100%;
    
  }
 
  .block{
-   position: fixed;
+   position: absolute;
    z-index: 10000;
-   width: 90%;
+   width: 100%;
    height: 110px;
    border-width: 0.5%;
    border: darkgrey;
@@ -113,7 +131,56 @@
    background:linear-gradient(to right, #609111, #4d6e17);
    border-left: none;
    border-top: none;
+   border-right: none;
    
  }
 
+
+.orb {
+	animation: spin 4s linear infinite;
+	width: 70px;
+	height: 70px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 50%;
+	box-shadow: inset 0 0 50px #d1b4cb, inset 20px 0 60px #960579, inset -20px 0 60px #f15fd7, inset 20px 0 300px #960579, inset -20px 0 300px #e20cb7, 0 0 50px #df91cf, -10px 0 60px #960579, 10px 0 60px #e63fc7;
+}
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+   }
+}
+
+
+
  
+@media only screen and (max-width: 800px) {
+	.sidebar{
+		display: none;
+		
+	}
+
+	.twitter{
+		
+		width: 100%;
+		
+	}
+	.chat{
+		height: 100%;
+		width: 100%;
+		
+		
+		
+	}
+	.block{
+		
+		height: 105px;
+		
+	}
+
+	.orb{
+		
+	}
+	
+  }

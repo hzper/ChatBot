@@ -3,7 +3,9 @@ import { Button } from '@material-ui/core';
 import React from "react";
 import "./styles.css";
 import srgt from "./srgt.png";
-import block from "./block.jpg";
+import "./eyes.js";
+import $ from "jquery";
+
 
 
 function App() {
@@ -19,22 +21,12 @@ function App() {
 
 
 
-
-
-
-
-
-
-
-
-
-
   <aside class="sidebar">
-  <img class= "srgt" src={srgt}  width="300" height="150"></img>
+  <img class= "srgt" src={srgt}></img>
 
     <nav  class="nav">
       <ul>
-        <li class="active"><a href="#">Welcome</a></li>
+        <li class="active"><a href="#">Assistant</a></li>
         <li><a href="#">Dashboard</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
@@ -44,9 +36,8 @@ function App() {
 
   <section class="twitter">
   
-  <div class="block"> </div>
-
-
+  <div class="block"><div class="orb"></div> </div>
+  <div class="blockmob"><div class="orbmob"></div> </div>
         <div>
         
         <iframe class="chat"
