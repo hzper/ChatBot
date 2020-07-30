@@ -104,6 +104,27 @@
 }
 
 
+
+@keyframes txt{
+	0% {
+		color: #960579;
+	}
+	25% {
+		color: #9b2b85;
+	}
+	50% {
+		color: #8d4d80;
+	}
+	75% {
+		color: #92698a;
+	}
+	100% {
+		color: #df9cd1;
+	}
+}
+
+
+
  .twitter  {
 	 position: relative;
 	 width: 75%;
@@ -143,7 +164,7 @@
 	margin: auto;
 	margin-top: 20px;
 	border-radius: 50%;
-	box-shadow: inset 0 0 50px #d1b4cb, inset 20px 0 60px #960579, inset -20px 0 60px #f15fd7, inset 20px 0 300px #960579, inset -20px 0 300px #e20cb7, 0 0 50px #df91cf, -10px 0 60px #960579, 10px 0 60px #e63fc7;
+	box-shadow: inset 0 0 50px #d48cce, inset 20px 0 60px #37ac14, inset -20px 0 60px #f33ed2, inset 20px 0 300px #0a5703, inset -20px 0 300px #e20cb7, 0 0 50px #25bd5f, -10px 0 60px #960579, 10px 0 60px #e63fc7;
 }
 @keyframes spin {
 	100% {
@@ -222,11 +243,19 @@
 		display: block;
 		padding: 15px 50px;
 		border-right: 1px solid #f4f4f4;
+		text-transform: uppercase;
+		
+		font-weight: bold;
+		letter-spacing: 0.25em;
 		text-decoration: none;
 		text-align: center;
 		border: darkgrey;
    border-style: solid;
    border-color: darkgrey;
+   animation-name: txt;
+   animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 	  }
 	  
 	  .header li a:hover,
