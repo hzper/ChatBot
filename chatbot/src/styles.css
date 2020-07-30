@@ -176,7 +176,7 @@
 
  
 @media only screen and (max-width: 800px) {
-	.nav{
+	.sidebar{
 		display: none;
 		
 	}
@@ -227,12 +227,13 @@
 		
 	  }
 
-	  .srgt{
+	  .srgtmob{
+		  position: fixed;
 		  z-index: 999999;
 		  width: 100px;
 		  height: 45px;
-		  margin-left: 87%;
-		  margin-top: 8%;
+		  margin-top: 30px;
+		
 	  }
 	
 

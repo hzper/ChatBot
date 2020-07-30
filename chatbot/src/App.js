@@ -42,7 +42,9 @@ function App() {
   <div class="block">
   
   <header class="header">
+
   
+  <img class= "srgtmob" src={srgt}></img>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
