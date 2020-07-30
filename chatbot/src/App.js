@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core';
 import React from "react";
 import "./styles.css";
 import srgt from "./srgt.png";
-import "./eyes.js";
+import myFunction from "./eyes.js";
 import $ from "jquery";
 
 
@@ -34,10 +34,30 @@ function App() {
     </nav>
   </aside>
 
+
+  
+
   <section class="twitter">
   
-  <div class="block"><div class="orb"></div> </div>
-  <div class="blockmob"><div class="orbmob"></div> </div>
+  <div class="block">
+  
+  <header class="header">
+  
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="#work">Assistant</a></li>
+    <li><a href="#about">Dashboard</a></li>
+    <li><a href="#careers">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header><div class="dropdown">
+  
+  
+  </div><div class="orb"></div> 
+</div>
+  
+  
         <div>
         
         <iframe class="chat"
